@@ -1,4 +1,4 @@
-# 🤖 NO CLONES ESTE REPOSITORIO, SIMPLEMENTE VE A RELEASES Y DESCARGA LA VERSIÓN MáS RECIENTE.
+# 🤖 NO CLONES ESTE REPOSITORIO, SIMPLEMENTE VE A RELEASES Y DESCARGA LA VERSIÓN MÁS RECIENTE.
 
 # Reverse Tethering Launcher (para Windows)
 ### Basado en: https://github.com/Genymobile/gnirehtet
