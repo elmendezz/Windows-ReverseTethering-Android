@@ -18,6 +18,7 @@ Estos ejecutables **NO** son virus.
 ## 📦 Los Dos Lanzadores
 
 Este proyecto te ofrece dos formas de iniciar el programa, cada una con su propio ícono:
+
 <img width="272" height="175" alt="image" src="https://github.com/user-attachments/assets/5be63dae-2087-48d6-8f14-1d869cc59205" />
 
 ### 1. `Reverse-Tethering-Visible.exe`
