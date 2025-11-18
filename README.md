@@ -42,22 +42,28 @@ Una vez hayas instalado el requisito previo:
 3.  **Conecta tu teléfono Android** a tu PC con el cable USB.
 
 4.  En tu teléfono, cambia el modo de conexión de "Solo carga" a **"Transferencia de archivos"**.
+5.  
     ![Cambiar modo de "Solo Carga" a "Transferencia de archivos"](help/charge_only_to_transfer_files.jpg)
 
-5.  **Habilita la "Depuración USB"** en tu teléfono.
+6.  **Habilita la "Depuración USB"** en tu teléfono.
     *(Si no sabes cómo, busca en Google "Cómo habilitar opciones de desarrollador en [tu modelo de móvil]")*.
+    
     ![Opciones de desarrollador con Depuración USB habilitada](help/enable_usb_debugging_developer_options.png)
 
-6.  Aparecerá un **aviso en tu teléfono** pidiendo permiso para la depuración. Marca "Permitir siempre" y pulsa **OK**.
+8.  Aparecerá un **aviso en tu teléfono** pidiendo permiso para la depuración. Marca "Permitir siempre" y pulsa **OK**.
+9.  
     ![Aviso de depuración USB "Permitir..."](help/usb_debugging_prompt.png)
 
-7.  El script instalará automáticamente la aplicación cliente de `gnirehtet` en tu teléfono.
+10.  El script instalará automáticamente la aplicación cliente de `gnirehtet` en tu teléfono.
+11.  
     ![Instalación automática de la app cliente](help/client_app_install_and_start_app_with_broadcast.png)
 
-8.  Aparecerá una **solicitud de conexión VPN** en tu teléfono. Es necesario para que el internet funcione. Acepta la solicitud.
+12.  Aparecerá una **solicitud de conexión VPN** en tu teléfono. Es necesario para que el internet funcione. Acepta la solicitud.
+13.  
     ![Solicitud de conexión VPN en Android](help/vpn_request.jpg)
 
-9.  **¡Y listo!** Verás un ícono de una **llave (VPN)** en la barra de estado de tu teléfono. Esto significa que ya estás conectado y usando el internet de tu PC.
+14.  **¡Y listo!** Verás un ícono de una **llave (VPN)** en la barra de estado de tu teléfono. Esto significa que ya estás conectado y usando el internet de tu PC.
+15.  
     ![Barra de estado de Android con el ícono de VPN (llave)](help/vpn_started_internet_connected_indication.png)
 
 ---
@@ -67,6 +73,7 @@ Una vez hayas instalado el requisito previo:
 * Si usas la versión **visible**, verás una consola con el registro de todas las conexiones que está haciendo tu teléfono.
 * Para desconectar, simplemente **cierra la ventana de la consola** (si usaste la versión visible) o **desconecta el cable USB**.
 * Si dejas la ventana visible abierta, el proceso se reiniciará automáticamente cada vez que desconectes y reconectes el móvil.
+
     ![Registro de conexión y desconexión](help/connection_starts_successfully_and_device_disconnect_after_use.png)
 
 ---
