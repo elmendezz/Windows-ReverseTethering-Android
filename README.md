@@ -1,60 +1,78 @@
+# Reverse Tethering Launcher (para Windows)
+### Basado en: https://github.com/Genymobile/gnirehtet
 
-# Reverse-tethering-setup-Windows
-### Based on: https://github.com/Genymobile/gnirehtet
-[<img src="https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows/blob/master/download_btn.png">](https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows/archive/master.zip)
+Conexión de internet de Windows a Android con un solo clic (Lo opuesto a Android USB Tethering).
 
+## ¿Qué hace esto?
 
-One click windows to android internet connection (Opposite of Android USB Tethering)
+Te ayuda en una situación en la que:
+1.  Tu teléfono necesita conexión a internet.
+2.  Tu PC tiene conexión a internet (por cable o Wi-Fi) pero no puede crear un Hotspot.
+3.  Tienes un cable USB para conectar el teléfono a la PC.
+4.  Quieres usar el internet de tu PC en tu teléfono.
 
-What it does:
-It helps in a situation where 
-1. Phone needs internet connection.
-2. PC has internet connection but doesn't have wifi/hotspot capability.
-3. You have a USB cable to connect phone to pc.
-4. You want to use pc's internet in your phone.
+## ⚠️ Requisito Previo MUY Importante
 
-You can simply follow the steps below to get a working internet connection on your phone. 
+Estos ejecutables **NO** son el programa `gnirehtet` en sí. Son **lanzadores** que automatizan el proceso.
 
-**How to use:**
-[Download this repo zip ~9MB](https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows/archive/master.zip)
+Para que funcionen, **primero debes haber instalado la versión oficial de `gnirehtet` para Windows**.
 
-Extract the zip file and double click 
-**START_ME_gnirehtet-autorun.cmd**
+1.  Ve a la página oficial de lanzamientos (releases):
+    [**https://github.com/Genymobile/gnirehtet/releases**](https://github.com/Genymobile/gnirehtet/releases)
+2.  Descarga el **instalador** más reciente. Por ejemplo: `gnirehtet-v2.6.1-windows-x64-installer.exe`.
+3.  Instálalo. Esto es **CRUCIAL**, ya que este instalador es el que pone `gnirehtet.exe` en la carpeta `%APPDATA%`, que es donde nuestros lanzadores lo van a buscar.
 
-![This window will appear](help/onstart.png)
+## 📦 Los Dos Lanzadores
 
-Now connect your android device to your windows pc
-Select mode file transfer (not "charge only")
-![This window will appear](help/charge_only_to_transfer_files.jpg)
+Este proyecto te ofrece dos formas de iniciar el programa, cada una con su propio ícono:
 
-Enable USB debugging
- (search on internet "**How to enable usb debugging in yourdevicehere**<xiaomi/samsung..>  ")
- ![This window will appear](help/enable_usb_debugging_developer_options.png)
+### 1. `Reverse-Tethering-Visible.exe`
+* **¿Qué hace?** Inicia el script mostrando la ventana de la consola (la terminal negra).
+* **¿Cuándo usarlo?** Es la **opción recomendada para la primera vez** o si algo parece no funcionar. En esta ventana podrás ver el registro de conexión en tiempo real, confirmar que tu teléfono se conectó y diagnosticar cualquier error.
 
- A prompt will appear on your phone
- 
-![This window will appear](help/usb_debugging_prompt.png)
- 
-Click OK
+### 2. `Reverse-Tethering.exe` (Invisible)
+* **¿Qué hace?** Inicia el script de forma **totalmente silenciosa en segundo plano**. No verás ninguna ventana emergente; simplemente funcionará.
+* **¿Cuándo usarlo?** Esta es la **opción para el uso diario**. Una vez que ya sabes que tu conexión funciona, no necesitas ver la consola. Simplemente haz doble clic y tu teléfono tendrá internet.
 
+## ⚡ Cómo Usar (Paso a Paso)
 
- App will be automatically installed on phone![This window will appear](help/client_app_install_and_start_app_with_broadcast.png
-)
+Una vez hayas instalado el requisito previo:
 
-A vpn request dialog will appear
+1.  **Ejecuta el lanzador** que prefieras (se recomienda `Reverse-Tethering-Visible.exe` la primera vez).
+    ![Ventana de la consola al iniciar](help/onstart.png)
 
- ![VPN connection request](help/vpn_request.jpg)
+2.  **Acepta los permisos de administrador** cuando Windows te lo pida. Son necesarios para gestionar la conexión.
 
-Accept it and vpn connection will start which will provide internet connection.
+3.  **Conecta tu teléfono Android** a tu PC con el cable USB.
 
- ![VPN connection started](help/vpn_started_internet_connected_indication.png)
- 
- **That's it. If you see this key icon in status bar means you are connected to pc and thus internet** 
+4.  En tu teléfono, cambia el modo de conexión de "Solo carga" a **"Transferencia de archivos"**.
+    ![Cambiar modo de "Solo Carga" a "Transferencia de archivos"](help/charge_only_to_transfer_files.jpg)
 
+5.  **Habilita la "Depuración USB"** en tu teléfono.
+    *(Si no sabes cómo, busca en Google "Cómo habilitar opciones de desarrollador en [tu modelo de móvil]")*.
+    ![Opciones de desarrollador con Depuración USB habilitada](help/enable_usb_debugging_developer_options.png)
 
+6.  Aparecerá un **aviso en tu teléfono** pidiendo permiso para la depuración. Marca "Permitir siempre" y pulsa **OK**.
+    ![Aviso de depuración USB "Permitir..."](help/usb_debugging_prompt.png)
 
-Disconnect usb after use.
-![This window will appear](help/connection_starts_successfully_and_device_disconnect_after_use.png)
+7.  El script instalará automáticamente la aplicación cliente de `gnirehtet` en tu teléfono.
+    ![Instalación automática de la app cliente](help/client_app_install_and_start_app_with_broadcast.png)
 
-If this window is kept open and device connected again, the process will start automatically.No manual work needed.
-Just launch once and keep minimized.
+8.  Aparecerá una **solicitud de conexión VPN** en tu teléfono. Es necesario para que el internet funcione. Acepta la solicitud.
+    ![Solicitud de conexión VPN en Android](help/vpn_request.jpg)
+
+9.  **¡Y listo!** Verás un ícono de una **llave (VPN)** en la barra de estado de tu teléfono. Esto significa que ya estás conectado y usando el internet de tu PC.
+    ![Barra de estado de Android con el ícono de VPN (llave)](help/vpn_started_internet_connected_indication.png)
+
+---
+
+### Notas Adicionales
+
+* Si usas la versión **visible**, verás una consola con el registro de todas las conexiones que está haciendo tu teléfono.
+* Para desconectar, simplemente **cierra la ventana de la consola** (si usaste la versión visible) o **desconecta el cable USB**.
+* Si dejas la ventana visible abierta, el proceso se reiniciará automáticamente cada vez que desconectes y reconectes el móvil.
+    ![Registro de conexión y desconexión](help/connection_starts_successfully_and_device_disconnect_after_use.png)
+
+---
+🧑‍💻 Hecho por **elmendezz** y **Gemini**.
+*(Guía de usuario adaptada del excelente README de [omkar-tenkale](https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows)).*
