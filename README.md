@@ -80,5 +80,5 @@ Una vez hayas instalado el requisito previo:
     ![Registro de conexión y desconexión](help/connection_starts_successfully_and_device_disconnect_after_use.png)
 
 ---
-🧑‍💻 Hecho por **elmendezz** y **Gemini**.
-*(Guía de usuario adaptada del excelente README de [omkar-tenkale](https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows)).*
+🧑‍💻 Hecho por **elmendezz**.
+Archivos Por: [omkar-tenkale](https://github.com/omkar-tenkale/Reverse-tethering-setup-Windows)).*
