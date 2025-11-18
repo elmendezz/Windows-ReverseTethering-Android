@@ -13,20 +13,14 @@ Te ayuda en una situación en la que:
 
 ## ⚠️ Requisito Previo MUY Importante
 
-Estos ejecutables **NO** son el programa `gnirehtet` en sí. Son **lanzadores** que automatizan el proceso.
-
-Para que funcionen, **primero debes haber instalado la versión oficial de `gnirehtet` para Windows**.
-
-1.  Ve a la página oficial de lanzamientos (releases):
-    [**https://github.com/Genymobile/gnirehtet/releases**](https://github.com/Genymobile/gnirehtet/releases)
-2.  Descarga el **instalador** más reciente. Por ejemplo: `gnirehtet-v2.6.1-windows-x64-installer.exe`.
-3.  Instálalo. Esto es **CRUCIAL**, ya que este instalador es el que pone `gnirehtet.exe` en la carpeta `%APPDATA%`, que es donde nuestros lanzadores lo van a buscar.
+Estos ejecutables **NO** son virus. 
 
 ## 📦 Los Dos Lanzadores
 
 Este proyecto te ofrece dos formas de iniciar el programa, cada una con su propio ícono:
 
 ### 1. `Reverse-Tethering-Visible.exe`
+
 * **¿Qué hace?** Inicia el script mostrando la ventana de la consola (la terminal negra).
 * **¿Cuándo usarlo?** Es la **opción recomendada para la primera vez** o si algo parece no funcionar. En esta ventana podrás ver el registro de conexión en tiempo real, confirmar que tu teléfono se conectó y diagnosticar cualquier error.
 
